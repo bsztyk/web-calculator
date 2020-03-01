@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Calculate In javascript</title>
 </head>
+
 <body>
- <form name="formcalc">
-     Number 1: <input type="text" name= "txtnum1">
-     <br>
-     Number 2: <input type= "text" name="txtnum2">
-     <br>
-     Result: <input type= "text" name="txtres"><br>
+    <form name="formcalc">
+        Number 1: <input type="text" name="txtnum1">
+        <br>
+        Number 2: <input type="text" name="txtnum2">
+        <br>
+        Result: <input type="text" name="txtres"><br>
 
-     <input type= "button" value= "Calculate" onClick="sumValues()">
+        <input type="button" value="sum" onClick="sumValues()">
+        <input type="button" value="subtract" onClick="subtractValues()">
+        <input type="button" value="multiply" onClick="multiplyValues()">
+        <input type="button" value="divide" onClick="divideValues()">
 
- </form>
- <script type ="text/javascript">
-    function sumValues()
-    {
-        var num1, num1, res;
-        num1=Number(document.formcalc.txtnum1.value);
-        num2=Number(document.formcalc.txtnum2.value);
-        res=num1+num2;
-        document.formcalc.txtres.value=res;
-    }
-</script>
+    </form>
+    <script type="text/javascript">
+        function sumValues() {
+            var num1, num1, res;
+            num1 = Number(document.formcalc.txtnum1.value);
+            num2 = Number(document.formcalc.txtnum2.value);
+            res = num1 + num2;
+            document.formcalc.txtres.value = res;
+        }
+        function subtractValues() {
+            var num1, num1, res;
+            num1 = Number(document.formcalc.txtnum1.value);
+            num2 = Number(document.formcalc.txtnum2.value);
+            res = num1 - num2;
+            document.formcalc.txtres.value = res;
+        }
+        function multiplyValues() {
+            var num1, num1, res;
+            num1 = Number(document.formcalc.txtnum1.value);
+            num2 = Number(document.formcalc.txtnum2.value);
+            res = num1 * num2;
+            document.formcalc.txtres.value = res;
+        }
+        function divideValues() {
+            var num1, num1, res;
+            num1 = Number(document.formcalc.txtnum1.value);
+            num2 = Number(document.formcalc.txtnum2.value);
+            res = num1 / num2;
+            document.formcalc.txtres.value = res;
+        }
+    </script>
 </body>
+
 </html>
